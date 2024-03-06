@@ -163,7 +163,7 @@ return {
       html = {},
       tailwindcss = {},
       cssls = {},
-      emmet_ls = {},
+      emmet_language_server = {},
       volar = {},
       eslint_d = {},
       prettierd = {},
