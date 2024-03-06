@@ -33,4 +33,10 @@ require('lazy').setup {
     event = 'InsertEnter',
     config = true,
   },
+  {
+    'norcalli/nvim-colorizer.lua',
+    config = function()
+      require('colorizer').setup()
+    end,
+  },
 }
