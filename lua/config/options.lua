@@ -23,6 +23,11 @@ vim.opt.clipboard = 'unnamedplus'
 -- Enable break indent
 vim.opt.breakindent = true
 
+-- Indentation settings
+vim.o.shiftwidth = 2
+vim.o.tabstop = 2
+vim.opt.expandtab = true
+
 -- Save undo history
 vim.opt.undofile = true
 
@@ -44,7 +49,7 @@ vim.opt.splitbelow = true
 -- Sets how neovim will display certain whitespace in the editor.
 --  See `:help 'list'`
 --  and `:help 'listchars'`
-vim.opt.list = true
+vim.opt.list = false
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- Preview substitutions live, as you type!
