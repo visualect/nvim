@@ -2,7 +2,7 @@ require('lazy').setup {
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
 
   -- `opts = {}` is equivalent to `require('Comment').setup({})`
-  { 'numToStr/Comment.nvim', opts = {} }, -- "gc" to comment visual regions/lines
+  { 'numToStr/Comment.nvim',    opts = {} }, -- "gc" to comment visual regions/lines
 
   require 'plugins.gitsigns',
 
@@ -25,8 +25,6 @@ require('lazy').setup {
   require 'plugins.tree-sitter',
 
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
-
-  require 'plugins.ibl',
 
   {
     'windwp/nvim-autopairs',
