@@ -1,4 +1,4 @@
-vim.lsp.enable({ 'lua_ls', 'ts_ls', "clangd", "racket_langserver", })
+vim.lsp.enable({ "clangd", "racket_langserver", 'lua_ls', 'ts_ls', "tailwindcss" })
 vim.diagnostic.config({ virtual_text = true })
 
 require("config.options")
