@@ -1,3 +1,5 @@
+local keymap = vim.keymap.set
+
 -- Yank (Copy) into system buffer
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking (copying) text",
@@ -26,3 +28,16 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end
   end,
 })
+
+-- Navigate between windows
+keymap("n", "<leader>ws", "<C-w>v", { desc = '[W]indow [s]plit (vertical)' })
+keymap("n", "<leader>wS", "<C-w>s", { desc = '[W]indow [s]plit (horizonal)' })
+keymap("n", "<C-h>", "<C-w>h")
+keymap("n", "<C-j>", "<C-w>j")
+keymap("n", "<C-k>", "<C-w>k")
+keymap("n", "<C-l>", "<C-w>l")
+
+-- Fast source
+keymap("n", "<space><space>x", "<cmd>source %<CR>")
+keymap("n", "<space>x", ":.lua<CR>")
+keymap("v", "<space>x", ":lua<CR>")
