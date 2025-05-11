@@ -1,4 +1,4 @@
-local keymap = vim.keymap.set
+local map = vim.keymap.set
 
 -- Yank (Copy) into system buffer
 vim.api.nvim_create_autocmd("TextYankPost", {
@@ -30,14 +30,14 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 
 -- Navigate between windows
-keymap("n", "<leader>ws", "<C-w>v", { desc = '[W]indow [s]plit (vertical)' })
-keymap("n", "<leader>wS", "<C-w>s", { desc = '[W]indow [s]plit (horizonal)' })
-keymap("n", "<C-h>", "<C-w>h")
-keymap("n", "<C-j>", "<C-w>j")
-keymap("n", "<C-k>", "<C-w>k")
-keymap("n", "<C-l>", "<C-w>l")
+map("n", "<leader>ws", "<C-w>v", { desc = '[W]indow [s]plit (vertical)' })
+map("n", "<leader>wS", "<C-w>s", { desc = '[W]indow [s]plit (horizonal)' })
+map("n", "<C-h>", "<C-w>h")
+map("n", "<C-j>", "<C-w>j")
+map("n", "<C-k>", "<C-w>k")
+map("n", "<C-l>", "<C-w>l")
 
 -- Fast source
-keymap("n", "<space><space>x", "<cmd>source %<CR>")
-keymap("n", "<space>x", ":.lua<CR>")
-keymap("v", "<space>x", ":lua<CR>")
+map("n", "<space><space>x", "<cmd>source %<CR>")
+map("n", "<space>x", ":.lua<CR>")
+map("v", "<space>x", ":lua<CR>")
