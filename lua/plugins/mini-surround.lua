@@ -1,6 +1,6 @@
 return {
   {
-    'echasnovski/mini.surround',
+    "echasnovski/mini.surround",
     version = false,
     config = function()
       -- - Add surrounding with `sa` (in visual mode or on motion).
@@ -11,6 +11,6 @@ return {
       -- - Change number of neighbor lines with `sn` (see |MiniSurround-algorithm|).
 
       require("mini.surround").setup()
-    end
+    end,
   },
 }
