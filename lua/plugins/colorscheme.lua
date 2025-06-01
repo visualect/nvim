@@ -1,7 +1,7 @@
 return {
-  "bluz71/vim-moonfly-colors",
+  "Mofiqul/vscode.nvim",
   priority = 1000,
   config = function()
-    vim.cmd("colorscheme moonfly")
+    vim.cmd("colorscheme vscode")
   end,
 }
