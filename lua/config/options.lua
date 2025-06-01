@@ -14,6 +14,7 @@ o.smartindent = true
 o.number = true
 o.relativenumber = true
 o.signcolumn = "yes"
+o.cursorline = true
 
 o.hlsearch = false
 o.incsearch = false
