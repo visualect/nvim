@@ -15,7 +15,8 @@ return {
           "html",
           "emmet_language_server",
           "tailwindcss",
-          "ts_ls",
+          -- "ts_ls",
+          "vtsls",
         },
       })
 
