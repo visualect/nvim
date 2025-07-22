@@ -17,11 +17,13 @@ return {
           "tailwindcss",
           -- "ts_ls",
           "vtsls",
+          "gopls",
         },
       })
 
       require("mason-tool-installer").setup({
         ensure_installed = {
+          "goimports",
           "prettier",
           "prettierd",
           "stylua",
