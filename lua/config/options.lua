@@ -20,3 +20,11 @@ o.hlsearch = false
 o.incsearch = false
 
 o.swapfile = false
+
+vim.diagnostic.config({
+  float = {
+    header = "",
+  },
+  severity_sort = true,
+  virtual_text = true,
+})
